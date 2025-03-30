@@ -3,6 +3,10 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "next/navigation";
 import { useAccount } from "wagmi";
 import axios from "axios";
+import { AvatarGenerator } from "random-avatar-generator";
+import CreditScoreIndicator from "@/components/user/CreditScoreIndicator";
+
+import NFTcard from "@/components/user/NFTcard";
 
 // Define Block Explorer APIs for supported chains
 const EXPLORER_APIS: Record<string, string> = {
@@ -25,10 +29,15 @@ const TransactionsPage = () => {
   const { address } = useAccount(); // Get connected wallet address (if applicable)
   const [transactions, setTransactions] = useState<any[]>([]);
   const [loading, setLoading] = useState(false);
+  const [img, setImg] = useState<string | undefined>();
   const [chain, setChain] = useState<"ethereum" | "polygon" | "bsc" | "base">(
     "ethereum"
   );
-
+  const generator = new AvatarGenerator();
+  useEffect(() => {
+    let s = generator.generateRandomAvatar();
+    setImg(s);
+  }, []);
   useEffect(() => {
     const fetchTransactions = async () => {
       if (!walletaddress) return; // Wait until we have the address
@@ -62,11 +71,21 @@ const TransactionsPage = () => {
   }, [address, chain]);
 
   return (
-    <div className="p-6">
-      <h2 className="text-2xl font-bold">
-        Transactions for {walletaddress || address}
+    <div className="p-6 pt-20">
+      <h2 className="text-2xl font-bold py-3">
+        Hello, {walletaddress || address}
       </h2>
-
+      <div className="relative w-full h-[200px] rounded-md mb-64 bg-gradient-to-r from-cyan-400/50 to-emerald-400/50 flex items-center justify-center">
+        <img
+          src={img}
+          alt="User Avatar"
+          className="w-48 h-48 absolute rounded-full top-20 shadow-lg"
+        />
+      </div>
+      <NFTcard avatar={img} name={"Akshat Maurya"} address={address} score={700} />
+      <div className="flex gap-6">
+        <CreditScoreIndicator score={700} />
+      </div>
       {/* Chain Selection Dropdown */}
       <div className="mt-4">
         <label className="mr-2 font-semibold">Select Chain:</label>

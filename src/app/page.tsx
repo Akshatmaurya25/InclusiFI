@@ -501,9 +501,9 @@ export default function Home() {
             <div className="col-span-2 md:col-span-1">
               <Link href="/" className="flex items-center gap-2 mb-4">
                 <Image
-                  src="/main-logo.png"
-                  height={200}
-                  width={200}
+                  src="/Logo.svg"
+                  height={400}
+                  width={400}
                   alt="Logo main"
                 />
               </Link>

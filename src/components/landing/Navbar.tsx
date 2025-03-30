@@ -1,20 +1,28 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { Button } from "../ui/button";
 import { ConnectButton } from "@rainbow-me/rainbowkit";
+import { useAccount } from "wagmi";
 
 const Navbar = () => {
+  const { address, isConnected } = useAccount();
   return (
     <div>
       {" "}
       <header className="fixed px-6 lg:px-16 top-0 left-0 right-0 z-50 border-b border-zinc-800 bg-black/80 backdrop-blur-sm">
         <div className="container flex h-16 items-center justify-between">
-          <Link href="/" className="flex items-center gap-2">
-            <Image src="/logo-only.png" height={40} width={40} alt="logo" />
-            <Image src="/text_logo.png" height={40} width={200} alt="logo" />
+          <Link href="/" className="flex items-center gap-2 justify-center">
+            <Image
+              src="/landscape_logo.svg"
+              height={50}
+              width={200}
+              alt="logo"
+              className="mt-5"
+            />
           </Link>
-          <nav className="hidden md:flex items-center gap-6">
+          {/* <nav className="hidden md:flex items-center gap-6">
             <Link
               href="#"
               className="text-sm text-zinc-400 hover:text-white transition-colors"
@@ -45,7 +53,7 @@ const Navbar = () => {
             >
               Contact
             </Link>
-          </nav>
+          </nav> */}
           <Button className="hidden md:flex bg-gradient-to-r from-cyan-500 to-emerald-500 hover:from-cyan-600 hover:to-emerald-600 text-white border-none">
             <ConnectButton
               accountStatus={{
@@ -53,6 +61,7 @@ const Navbar = () => {
                 largeScreen: "full",
               }}
             />
+            <Link href={`/user/${address}`}>Dashboard</Link>
           </Button>
           <Button
             variant="outline"

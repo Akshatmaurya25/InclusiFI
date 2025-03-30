@@ -13,6 +13,7 @@ import {
   optimism,
   sepolia,
   base,
+  eduChain,
 } from "wagmi/chains";
 import "@rainbow-me/rainbowkit/styles.css";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
@@ -28,7 +29,7 @@ const queryClient = new QueryClient();
 const config = getDefaultConfig({
   appName: "InclusiFi",
   projectId: projectId,
-  chains: [mainnet, polygon, optimism, arbitrum, base],
+  chains: [mainnet, polygon, optimism, arbitrum, base, eduChain],
   ssr: true, // If your dApp uses server side rendering (SSR)
 });
 
