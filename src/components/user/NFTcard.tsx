@@ -60,7 +60,7 @@ const NFTcard = (props: any) => {
   return (
     <div
       ref={captureRef}
-      className="flex items-center justify-center min-h-screen bg-gradient-to-br from-gray-900 via-purple-900/10 to-gray-900 p-6"
+      className="flex items-center justify-center min-h-screen from-gray-900 via-purple-900/10 to-gray-900 p-6"
     >
       <div
         className="relative w-full max-w-sm rounded-2xl overflow-hidden transition-all duration-500 ease-in-out"
@@ -96,7 +96,7 @@ const NFTcard = (props: any) => {
               <div className="relative h-16 w-16 rounded-full overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-br from-cyan-500 to-emerald-500 animate-pulse-slow"></div>
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <Image src={props.avatar} alt="" />
+                  <Image width={80} height={80} src={props.avatar} alt="" />
                 </div>
               </div>
 
@@ -157,11 +157,11 @@ const NFTcard = (props: any) => {
             </div>
             <div className="bg-white/5 backdrop-blur-sm rounded-lg p-2 text-center">
               <p className="text-xs text-gray-400">Network</p>
-              <p className="text-sm text-white font-medium">Polygon</p>
+              <p className="text-sm text-white font-medium">Base</p>
             </div>
             <div className="bg-white/5 backdrop-blur-sm rounded-lg p-2 text-center">
               <p className="text-xs text-gray-400">Royalty</p>
-              <p className="text-sm text-white font-medium">10%</p>
+              <p className="text-sm text-white font-medium">3.8%</p>
             </div>
           </div>
 

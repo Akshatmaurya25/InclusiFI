@@ -65,30 +65,25 @@ export default function Home() {
 
       <main className=" px-12 lg:px-32">
         {/* Hero Section */}
-        <section className="relative pt-32 pb-20 md:pt-40 md:pb-32 overflow-hidden">
-          <div className="absolute inset-0 z-0 flex items-center  ">
-            <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-zinc-900/60 via-black to-black"></div>
-            <div className="absolute  top-0 left-0 right-0 h-[500px] bg-gradient-to-br from-cyan-500/10 to-emerald-500/10 blur-3xl"></div>
-          </div>
-
-          <div className="flex   items-center  relative z-10">
+        <section className="flex flex-col items-center justify-center pt-32 pb-20 md:pt-40 md:pb-32 overflow-hidden">
+          <div className="flex justify-center  items-center  z-10">
             <div className="">
-              <div className="space-y-8">
-                <h1 className="text-4xl md:text-5xl lg:text-6xl text-center lg:text-left font-bold leading-tight ">
-                  Unlock Your <br />
-                  <AnimatedShinyText>
-                    <span className="bg-gradient-to-r  from-cyan-400 to-emerald-400 bg-clip-text text-transparent">
+              <div className="space-y-8 flex text-center items-center justify-center flex-col">
+                <div className="mt-20">
+                  <h1 className="text-4xl flex items-center  justify-center md:text-5xl lg:text-6xl text-center lg:text-left font-bold leading-tight ">
+                    Your Crypto{" "}
+                    <span className="bg-gradient-to-r ml-2 from-cyan-400 to-emerald-400 bg-clip-text text-transparent">
+                      Reputation
+                    </span>{" "}
+                  </h1>
+                  <h1 className="text-4xl flex items-center  justify-center md:text-5xl lg:text-6xl text-center lg:text-left font-bold leading-tight ">
+                    Your{" "}
+                    <span className="bg-gradient-to-r ml-2 from-cyan-400 to-emerald-400 bg-clip-text text-transparent">
                       Credit Score
                     </span>{" "}
-                  </AnimatedShinyText>
-                  <br />
-                  with Just Your Wallet
-                </h1>
-                <p className="text-lg text-zinc-400 max-w-md">
-                  Our decentralized platform analyzes your blockchain activity
-                  to generate a credit score without traditional credit checks
-                  or personal information.
-                </p>
+                  </h1>
+                </div>
+                <p className="text-lg text-zinc-400 max-w-md"></p>
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Button className="bg-gradient-to-r from-cyan-500 to-emerald-500 hover:from-cyan-600 hover:to-emerald-600 text-white border-none h-12 px-8 text-lg shadow-lg shadow-emerald-500/20 hover:shadow-emerald-500/40 transition-all">
                     Check Your Score
@@ -181,59 +176,9 @@ export default function Home() {
 
         {/* Why Use Us & How It Works Section */}
         <section id="how-it-works" className="py-20">
-          <div className="container">
-            <div className="grid md:grid-cols-2 gap-16">
+          <div className="container ">
+            <div className="grid  gap-16 max-w-[600px] mx-auto">
               {/* Why Use Us */}
-              <div>
-                <h2 className="text-3xl font-bold bg-gradient-to-r from-cyan-400 to-emerald-400 bg-clip-text text-transparent mb-8">
-                  Why Choose CryptoScore
-                </h2>
-                <ul className="space-y-6">
-                  <li className="flex gap-4">
-                    <div className="h-10 w-10 rounded-full bg-gradient-to-br from-cyan-500/20 to-emerald-500/20 flex items-center justify-center flex-shrink-0">
-                      <span className="text-emerald-400 font-bold">01</span>
-                    </div>
-                    <div>
-                      <h3 className="text-xl font-semibold text-white mb-2">
-                        Decentralized & Trustless
-                      </h3>
-                      <p className="text-zinc-400">
-                        Our platform operates on decentralized principles,
-                        removing intermediaries and ensuring transparency in
-                        credit scoring.
-                      </p>
-                    </div>
-                  </li>
-                  <li className="flex gap-4">
-                    <div className="h-10 w-10 rounded-full bg-gradient-to-br from-cyan-500/20 to-emerald-500/20 flex items-center justify-center flex-shrink-0">
-                      <span className="text-emerald-400 font-bold">02</span>
-                    </div>
-                    <div>
-                      <h3 className="text-xl font-semibold text-white mb-2">
-                        Global Accessibility
-                      </h3>
-                      <p className="text-zinc-400">
-                        Available to anyone with a blockchain wallet, regardless
-                        of location or traditional banking history.
-                      </p>
-                    </div>
-                  </li>
-                  <li className="flex gap-4">
-                    <div className="h-10 w-10 rounded-full bg-gradient-to-br from-cyan-500/20 to-emerald-500/20 flex items-center justify-center flex-shrink-0">
-                      <span className="text-emerald-400 font-bold">03</span>
-                    </div>
-                    <div>
-                      <h3 className="text-xl font-semibold text-white mb-2">
-                        Real-time Updates
-                      </h3>
-                      <p className="text-zinc-400">
-                        Your credit score updates in real-time as your on-chain
-                        activity evolves, providing the most current assessment.
-                      </p>
-                    </div>
-                  </li>
-                </ul>
-              </div>
 
               {/* How It Works */}
               <div>
@@ -373,7 +318,55 @@ export default function Home() {
             </div>
           </div>
         </section>
-
+        <div className="max-w-[600px] mx-auto">
+          <h2 className="text-3xl font-bold bg-gradient-to-r from-cyan-400 to-emerald-400 bg-clip-text text-transparent mb-8">
+            Why Choose CryptoScore
+          </h2>
+          <ul className="space-y-6">
+            <li className="flex gap-4">
+              <div className="h-10 w-10 rounded-full bg-gradient-to-br from-cyan-500/20 to-emerald-500/20 flex items-center justify-center flex-shrink-0">
+                <span className="text-emerald-400 font-bold">01</span>
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold text-white mb-2">
+                  Decentralized & Trustless
+                </h3>
+                <p className="text-zinc-400">
+                  Our platform operates on decentralized principles, removing
+                  intermediaries and ensuring transparency in credit scoring.
+                </p>
+              </div>
+            </li>
+            <li className="flex gap-4">
+              <div className="h-10 w-10 rounded-full bg-gradient-to-br from-cyan-500/20 to-emerald-500/20 flex items-center justify-center flex-shrink-0">
+                <span className="text-emerald-400 font-bold">02</span>
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold text-white mb-2">
+                  Global Accessibility
+                </h3>
+                <p className="text-zinc-400">
+                  Available to anyone with a blockchain wallet, regardless of
+                  location or traditional banking history.
+                </p>
+              </div>
+            </li>
+            <li className="flex gap-4">
+              <div className="h-10 w-10 rounded-full bg-gradient-to-br from-cyan-500/20 to-emerald-500/20 flex items-center justify-center flex-shrink-0">
+                <span className="text-emerald-400 font-bold">03</span>
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold text-white mb-2">
+                  Real-time Updates
+                </h3>
+                <p className="text-zinc-400">
+                  Your credit score updates in real-time as your on-chain
+                  activity evolves, providing the most current assessment.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
         {/* CTA Section */}
         <section className="py-20">
           <div className="container">
