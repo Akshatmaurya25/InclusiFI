@@ -53,5 +53,4 @@ npm install
 npm start
 ```
 
-## 📞 Contact
-For collaboration or inquiries, reach out to us at **[your-email@example.com](mailto:your-email@example.com)**.
+## Built with 💗 by Team BrewSpace🚀
