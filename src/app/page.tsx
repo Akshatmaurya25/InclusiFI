@@ -66,13 +66,13 @@ export default function Home() {
       <main className=" px-12 lg:px-32">
         {/* Hero Section */}
         <section className="relative pt-32 pb-20 md:pt-40 md:pb-32 overflow-hidden">
-          <div className="absolute inset-0 z-0">
+          <div className="absolute inset-0 z-0 flex items-center  ">
             <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-zinc-900/60 via-black to-black"></div>
             <div className="absolute  top-0 left-0 right-0 h-[500px] bg-gradient-to-br from-cyan-500/10 to-emerald-500/10 blur-3xl"></div>
           </div>
 
-          <div className="container  relative z-10">
-            <div className="grid p-8 gap-8 md:grid-cols-2 items-center">
+          <div className="flex   items-center  relative z-10">
+            <div className="">
               <div className="space-y-8">
                 <h1 className="text-4xl md:text-5xl lg:text-6xl text-center lg:text-left font-bold leading-tight ">
                   Unlock Your <br />
@@ -100,94 +100,6 @@ export default function Home() {
                     Learn More <ChevronRight className="ml-2 h-4 w-4" />
                   </Button>
                 </div>
-              </div>
-              <div className="relative flex items-center justify-center h-[300px] md:h-[400px] lg:h-[500px]">
-                <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/10 to-emerald-500/10 rounded-full blur-3xl"></div>
-                <svg
-                  width="100%"
-                  height="100%"
-                  viewBox="0 0 800 600"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <defs>
-                    <radialGradient id="bgGradient" cx="50%" cy="50%" r="50%">
-                      <stop
-                        offset="0%"
-                        style={
-                          {
-                            stopColor: "#0D0D0D",
-                            stopOpacity: 1,
-                          } as React.CSSProperties
-                        }
-                      />
-                      <stop
-                        offset="100%"
-                        style={
-                          {
-                            stopColor: "#121212",
-                            stopOpacity: 1,
-                          } as React.CSSProperties
-                        }
-                      />
-                    </radialGradient>
-                  </defs>
-                  <rect width="100%" height="100%" fill="url(#bgGradient)" />
-
-                  <circle cx="150" cy="200" r="8" fill="#00ccff" />
-                  <circle cx="300" cy="100" r="8" fill="#00ccff" />
-                  <circle cx="450" cy="250" r="8" fill="#00ccff" />
-                  <circle cx="600" cy="150" r="8" fill="#00ccff" />
-                  <circle cx="700" cy="300" r="8" fill="#00ccff" />
-
-                  <line
-                    x1="150"
-                    y1="200"
-                    x2="300"
-                    y2="100"
-                    stroke="#00ccff"
-                    strokeWidth={2}
-                    opacity={0.6}
-                  />
-                  <line
-                    x1="300"
-                    y1="100"
-                    x2="450"
-                    y2="250"
-                    stroke="#00ccff"
-                    strokeWidth={2}
-                    opacity={0.6}
-                  />
-                  <line
-                    x1="450"
-                    y1="250"
-                    x2="600"
-                    y2="150"
-                    stroke="#00ccff"
-                    strokeWidth={2}
-                    opacity={0.6}
-                  />
-                  <line
-                    x1="600"
-                    y1="150"
-                    x2="700"
-                    y2="300"
-                    stroke="#00ccff"
-                    strokeWidth={2}
-                    opacity={0.6}
-                  />
-
-                  <circle cx="200" cy="400" r="12" fill="#ffcc00" />
-                  <circle cx="400" cy="450" r="12" fill="#ffcc00" />
-                  <circle cx="650" cy="400" r="12" fill="#ffcc00" />
-                </svg>
-
-                {/* <Image
-                  src={heroImage}
-                  alt="Blockchain Credit Score Visualization"
-                  width={500}
-                  height={500}
-                  className="relative z-10"
-                /> */}
               </div>
             </div>
           </div>

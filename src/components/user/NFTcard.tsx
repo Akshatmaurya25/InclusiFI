@@ -27,7 +27,7 @@ const NFTcard = (props: any) => {
 
   const contractAddress = "0xb34e38Ae502783eB78771047C46522358778954c";
   const { writeContract, isPending } = useWriteContract();
-  let htmlContent = "InclusiFI";
+  const htmlContent = "InclusiFI";
   const mintNFT = async () => {
     if (!address) return;
     try {
@@ -45,7 +45,7 @@ const NFTcard = (props: any) => {
   const handleMint = async () => {
     setIsMinting(true);
     setMintProgress(50);
-    let res = await captureImage();
+    const res = await captureImage();
     console.log(res);
   };
 
@@ -96,7 +96,7 @@ const NFTcard = (props: any) => {
               <div className="relative h-16 w-16 rounded-full overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-br from-cyan-500 to-emerald-500 animate-pulse-slow"></div>
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <img src={props.avatar} alt="" />
+                  <Image src={props.avatar} alt="" />
                 </div>
               </div>
 
