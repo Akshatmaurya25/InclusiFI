@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# InclusiFi: Decentralized Credit Scoring for the Unbanked
 
-## Getting Started
+## Overview
+InclusiFi is a blockchain-based credit scoring system designed to provide financial inclusion for unbanked individuals. By analyzing **crypto wallet transactions, smart contract interactions, and on-chain activity**, Inclusifi generates a **reliable credit score** without relying on traditional banking data. This solution enables **DeFi lenders, Web3 financial services, and digital asset holders** to assess creditworthiness transparently and efficiently.
 
-First, run the development server:
+## Problem Statement & Our Solution
+### Problem
+Over **300 million crypto users** lack access to traditional credit due to the absence of **bank accounts and financial history**. Current credit assessment models do not accommodate Web3 users, limiting their ability to access loans and financial services.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+### Solution
+InclusiFi leverages **blockchain transaction history, wallet activity, and decentralized finance (DeFi) participation** to generate an alternative credit score. By integrating on-chain data, our model provides a **trustless, verifiable, and transparent** credit assessment system that empowers unbanked individuals to access lending opportunities.
+
+## Key Features
+- **On-Chain Credit Scoring** – Uses wallet transaction history, smart contract interactions, and asset holdings to evaluate creditworthiness.
+- **Decentralized & Transparent** – Eliminates reliance on centralized credit agencies, ensuring a trustless and tamper-proof system.
+- **DeFi Integration** – Seamlessly connects with DeFi lending platforms to facilitate blockchain-based credit access.
+- **Reputation-Based Scoring** – Incorporates DAO memberships, Web3 credentials, and past transactions for enhanced credibility.
+- **API & Analytics Dashboard** – Provides real-time credit insights for DeFi platforms and Web3 financial services.
+
+## Business Model & Market Opportunity
+### Business Model
+- **B2B API Access** – DeFi platforms pay for access to user credit scores.
+- **Premium Credit Reports** – Users can purchase detailed credit analysis.
+- **Subscription Plans** – Advanced analytics for high-volume traders and institutional investors.
+- **Partnerships** – Collaborations with Web3 financial services, DAOs, and digital identity platforms to enhance credit access.
+
+### Market Opportunity
+- **300M+ Crypto Users** with no access to traditional credit.
+- **DeFi Lending Growth** expected to exceed **$150B+ by 2026**.
+- **Expanding Web3 Financial Services** creating demand for decentralized credit solutions.
+
+## Conclusion
+InclusiFi bridges the gap between **crypto transactions and financial credibility**, offering a scalable and transparent credit scoring system for the Web3 ecosystem. By leveraging **decentralized finance and blockchain technology**, InclusiFi empowers unbanked individuals with new opportunities for financial growth while providing DeFi platforms with reliable credit assessment tools.
+
+---
+
+## 🚀 Get Started
+### Installation
+```sh
+# Clone the repository
+git clone https://github.com/your-repo/inclusifi.git
+
+# Navigate to project directory
+cd inclusifi
+
+# Install dependencies
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Usage
+```sh
+# Start the application
+npm start
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Built with 💗 by Team BrewSpace🚀
