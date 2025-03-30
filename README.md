@@ -1,14 +1,14 @@
-# Inclusifi: Decentralized Credit Scoring for the Unbanked
+# InclusiFi: Decentralized Credit Scoring for the Unbanked
 
 ## Overview
-Inclusifi is a blockchain-based credit scoring system designed to provide financial inclusion for unbanked individuals. By analyzing **crypto wallet transactions, smart contract interactions, and on-chain activity**, Inclusifi generates a **reliable credit score** without relying on traditional banking data. This solution enables **DeFi lenders, Web3 financial services, and digital asset holders** to assess creditworthiness transparently and efficiently.
+InclusiFi is a blockchain-based credit scoring system designed to provide financial inclusion for unbanked individuals. By analyzing **crypto wallet transactions, smart contract interactions, and on-chain activity**, Inclusifi generates a **reliable credit score** without relying on traditional banking data. This solution enables **DeFi lenders, Web3 financial services, and digital asset holders** to assess creditworthiness transparently and efficiently.
 
 ## Problem Statement & Our Solution
 ### Problem
 Over **300 million crypto users** lack access to traditional credit due to the absence of **bank accounts and financial history**. Current credit assessment models do not accommodate Web3 users, limiting their ability to access loans and financial services.
 
 ### Solution
-Inclusifi leverages **blockchain transaction history, wallet activity, and decentralized finance (DeFi) participation** to generate an alternative credit score. By integrating on-chain data, our model provides a **trustless, verifiable, and transparent** credit assessment system that empowers unbanked individuals to access lending opportunities.
+InclusiFi leverages **blockchain transaction history, wallet activity, and decentralized finance (DeFi) participation** to generate an alternative credit score. By integrating on-chain data, our model provides a **trustless, verifiable, and transparent** credit assessment system that empowers unbanked individuals to access lending opportunities.
 
 ## Key Features
 - **On-Chain Credit Scoring** – Uses wallet transaction history, smart contract interactions, and asset holdings to evaluate creditworthiness.
@@ -30,7 +30,7 @@ Inclusifi leverages **blockchain transaction history, wallet activity, and decen
 - **Expanding Web3 Financial Services** creating demand for decentralized credit solutions.
 
 ## Conclusion
-Inclusifi bridges the gap between **crypto transactions and financial credibility**, offering a scalable and transparent credit scoring system for the Web3 ecosystem. By leveraging **decentralized finance and blockchain technology**, Inclusifi empowers unbanked individuals with new opportunities for financial growth while providing DeFi platforms with reliable credit assessment tools.
+InclusiFi bridges the gap between **crypto transactions and financial credibility**, offering a scalable and transparent credit scoring system for the Web3 ecosystem. By leveraging **decentralized finance and blockchain technology**, InclusiFi empowers unbanked individuals with new opportunities for financial growth while providing DeFi platforms with reliable credit assessment tools.
 
 ---
 
